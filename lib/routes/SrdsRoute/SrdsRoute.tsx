@@ -47,6 +47,8 @@ export function Srds() {
         title={t("srds-route.fate-srds.title")}
         subtitle={t("srds-route.fate-srds.subtitle")}
       />
+      <ClotuItems />
+      <Box pt="1rem" />
       <SrdItems />
       <Box pt="1rem" />
       <ToolkitItems />
@@ -61,6 +63,115 @@ const FateCondensedLinks: { [language in IPossibleLanguages]?: string } = {
   "en": "/srds/condensed",
   "pt-BR": "/pt-br/srds/condensed",
 };
+
+export function ClotuItems() {
+  const { currentLanguage, t } = useTranslate();
+
+  return (
+    <Box>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-ethos.title")}
+            description={t("docs.clotu-ethos.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-ethos"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-ideals.title")}
+            description={t("docs.clotu-ideals.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-ideals"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-fighting-style.title")}
+            description={t("docs.clotu-fighting-style.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-fighting-style"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-skills.title")}
+            description={t("docs.clotu-skills.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-skills"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-approaches.title")}
+            description={t("docs.clotu-approaches.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-approaches"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-crisis-countdown.title")}
+            description={t("docs.clotu-crisis-countdown.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-crisis-countdown"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-power-display.title")}
+            description={t("docs.clotu-power-display.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-power-display"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-power-stunt.title")}
+            description={t("docs.clotu-power-stunt.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-power-stunt"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} sm={6} md={4}>
+          <DocCard
+            title={t("docs.clotu-power-combo.title")}
+            description={t("docs.clotu-power-combo.description")}
+            bgcolor="#007fda"
+            link="/srds/clotu-power-combo"
+            imageUrl={Images.clu-logo}
+          />
+        </Grid>
+      </Grid>
+    </Box>
+  );
+}
+
 export function SrdItems() {
   const { currentLanguage, t } = useTranslate();
 
